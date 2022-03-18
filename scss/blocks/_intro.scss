@@ -1,0 +1,116 @@
+.intro__content{
+    max-width: 518px;
+    position: relative;
+    margin-bottom: 233px;
+    margin-top: 100px;
+    &::after{
+        position: absolute;
+        background: url('../../img/amico.png') no-repeat center center;
+        content: '';
+        width: 600px;
+        height: 555px;
+        top: -60px;
+        left: calc(100% + 33px);
+    }
+}
+.intro__slogan {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #22343D;
+    margin-bottom: 18px;
+}
+.inrto__desc {
+    margin: 0;
+    padding: 0;
+    width: 458px    ;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #22343D;
+    margin-bottom: 60px;
+}
+.intro__btn{
+    margin-right: 71px;
+}
+.intro__link {
+    position: relative;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #02897A;
+    &::before{
+        position: absolute;
+        background: url('../../img/triangle.png') no-repeat center center;
+        content: '';
+        width: 20px;
+        height: 17px;
+        top: -1px;
+        right: calc(100% + 8px);
+    }
+}
+
+@media only screen and (max-width:$tablet){
+    .intro__content{
+        margin-bottom: 100px;
+        max-width: 700px;
+        padding-top:600px;
+        margin-right: 0;
+        text-align: center;
+        &::after{
+            left: auto;
+            top: 1px;
+            right: 60px;
+        }
+    }
+    .inrto__desc{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+}
+}
+
+
+@media only screen and (max-width:$mobile){
+    .intro__content{
+        position: relative;
+        max-width: 369px;
+        padding-top: 350px;
+        &::after{
+            position: absolute;
+            background: url("../../img/amico-mobile.png") no-repeat center center;
+            width: 338px;
+            height: 311px;
+            content: '';
+            top: 10px;
+            left: auto;
+            right: -12px;
+        }
+    }
+    .intro__slogan{
+        font-size: 36px;
+        line-height: 60px;
+        text-align: center;
+    }
+    .inrto__desc{
+        width: 326px;
+    }
+
+    .intro__link{
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+    }
+    .intro__btn{
+        padding: 14px 24px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 28px;
+    }
+}
