@@ -1,4 +1,4 @@
-.table{
+.tables{
     padding-bottom: 150px;
 }
 .tables__container{
@@ -100,7 +100,7 @@
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 0.1px;
-    color: #02897A; 
+    color: #02897A;
 }
 .tables__paragraph-wrapper {
     display: flex;
@@ -111,7 +111,7 @@
     padding: 24px 76px 43px 73px;
 }
 .tables__item-casing {
-    margin-left: 8px; 
+    margin-left: 8px;
     text-align: start;
 }
 .tables__item-desc{
@@ -154,7 +154,7 @@
     }
     .tables__paragraph-wrapper{
         max-width: fit-content;
-        text-align: center;    
+        text-align: center;
     }
     .tables__item{
         margin-right: 0;
