@@ -1,0 +1,118 @@
+
+.strategies__container {
+    text-align: center;
+}
+.strategies__title {
+    margin: 0;
+    padding: 0;
+    margin-top: 150px;
+    margin-bottom: 8px;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    color: #22343D;
+    text-align: start;
+}
+.strategies__paragraph {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 33px;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+    text-align: start
+}
+.strategies__list {
+    @include reset-list;
+    display: flex;
+}
+.strategies__item {
+    max-width: 348px;
+    margin-right: 33px;
+    border: 1px solid rgb(218, 209, 209);
+    border-radius: 8px;
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+    margin-bottom: 64px;
+}
+.strategies__pic {
+    border-radius: 8px 0;
+}
+.strategies__desc {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #22343D;
+}
+.strategies__description{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #22343D;
+    &-blue{
+        max-width: 294px;
+        color: #02897A;
+    }
+}
+
+.strategies__desc-wrapper{
+    padding: 24px 30px 40px 24px;
+}
+
+.strategies__button{
+    margin: 0 auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #EFEFEF;
+    &:last-child{
+        margin-right: 0;
+    }
+    &-blue{
+        background-color: #02897A;
+    }
+}
+
+@media only screen and (max-width:$tablet){
+    .strategies__container{
+        text-align: center;
+    }
+    .strategies__title{
+        text-align: center;
+    }
+    .strategies__paragraph{
+        text-align: center;
+    }
+    .strategies__item{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:$mobile){
+    .strategies__list {
+        display: block;
+        text-align: center;
+    }
+    .strategies__title{
+        margin-top: 70px;
+        text-align: center;
+    }
+    .strategies__paragraph{
+        text-align: center;
+    }
+    .strategies__button{
+        display: none;
+    }
+}
