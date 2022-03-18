@@ -1,0 +1,133 @@
+.feedback{
+  padding-bottom: 157px;
+}
+.feedback__title{
+  width: 302px;
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 57px;
+  color: rgba(34, 52, 61, 1);
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+.feedback__desc{
+  width: 537px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(34, 52, 61, 1);
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.feedback__list{
+  @include reset-list;
+  display:  flex;
+}
+.feedback__item{
+  width: 327px;
+  padding: 28px 26px 23px;
+  border: 1px solid rgba(222, 222, 222, 1);
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  margin-right: 64px;
+
+
+  &:last-child{
+    margin-right: 0px;
+  }
+}
+.feedback__item-desc{
+  margin: 0;
+  width: 275px;
+  margin-bottom: 16px;
+}
+.feedback__rate-stars{
+  display: block;
+  margin-bottom: 16px;
+}
+.feedback__designer-wrapper{
+  display: flex;
+}
+.feedback__designer-name{
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgba(2, 137, 122, 1);
+}
+.feedback__designer-job{
+ margin: 0;
+}
+.feedback__designer-info{
+  margin-left: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgba(37, 43, 66, 1);
+}
+
+@media only screen and (max-width: $tablet) {
+
+  .feedback__title{
+    width: 302px;
+    font-size: 34px;
+    line-height: 52px;
+  }
+  .feedback__desc{
+    width: 520px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 48px;
+  }
+  .feedback__list{
+   flex-direction: column;
+  }
+  .feedback__item{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+  .feedback__item-desc{
+    margin: 0;
+    width: 340px;
+    margin-bottom: 0px;
+  }
+  .feedback__designer-wrapper{
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: $mobile){
+  .feedback__title{
+    margin-bottom: 8px;
+  }
+  .feedback__desc{
+    width: 323px;
+    margin-bottom: 32px;
+  }
+  .feedback__item{
+    width: 327px;
+    flex-direction: column;
+  }
+  .feedback__item-desc{
+    width: 275px;
+    margin-bottom: 16px;
+  }
+  .feedback__designer-wrapper{
+    margin-right: 0px;
+  }
+
+}
