@@ -1,0 +1,97 @@
+.effects{
+  padding: 150px 0px;
+}
+.effects__container{
+  background-image: url(../../img/amico.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 0;
+}
+.effects__title{
+  margin: 0;
+  width: 878px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: rgba(34, 52, 61, 1);
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+.effects__content{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+}
+.effects__list{
+  @include reset-list;
+}
+.effects__item{
+  margin-bottom: 32px;
+
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+.effects__item-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.effects__item-logo-img{
+  margin-right: 14px;
+}
+.effects__item-desc{
+  margin: 0px;
+  width: 540px;
+  line-height: 28px;
+}
+.effects__item-title{
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+@media only screen and(max-width:$tablet){
+  .effects__content{
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .effects__container{
+    background-position: right 100px top 131px;
+  }
+  .effects__title{
+    width: 750px;
+    font-size: 26px;
+    margin-bottom: 560px;
+  }
+}
+@media only screen and(max-width:$mobile){
+  .effects__container{
+    background-image: url(../../img/image.png);
+    background-repeat: no-repeat;
+    background-position: top 194px left 15px;
+  }
+  .effects__title{
+    width: 342px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 360px;
+    text-align: center;
+  }
+  .effects__content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+.effects__item{
+  margin-bottom: 24px;
+  width: 338px;
+
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+.effects__item-desc{
+  width: 338px;
+}
+}
