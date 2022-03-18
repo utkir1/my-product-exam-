@@ -714,11 +714,11 @@ a {
   margin-bottom: 28px;
 }
 
-.footer__social-img {
+.footer__soc-link {
   margin-right: 16px;
 }
 
-.footer__social-img:last-child {
+.footer__soc-link:last-child {
   margin-right: 0px;
 }
 
