@@ -1,12 +1,16 @@
 .tables{
     padding-bottom: 150px;
 }
+.tables__about{
+padding-top: 80px;
+}
 .tables__container{
     text-align: center;
 }
 .tables__list{
     margin: 0 auto
 }
+
 .tables__title {
     margin: 0;
     padding: 0;
@@ -18,6 +22,17 @@
     line-height: 51px;
     color: #22343D;
 }
+.tables__title-about{
+    margin-top: 50px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0px;
+
+}
+
 .tables__paragraph {
     margin: 0;
     padding: 0;
@@ -27,6 +42,27 @@
     font-size: 16px;
     line-height: 24px;
     color: #22343D;
+}
+.tables__paragraph-about{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 16px;
+
+}
+.tables__about-desc{
+    margin: 0px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 49px;
+
 }
 .tables__list {
     @include reset-list;

@@ -520,6 +520,7 @@ a {
 
 .header {
   position: fixed;
+  padding: 19px 0px;
   width: 100%;
   top: 0;
   left: 0;
@@ -529,17 +530,16 @@ a {
 
 .header__container {
   max-width: 1110px;
-  padding: 23px 20px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__nav-wrapper {
@@ -643,7 +643,8 @@ a {
 }
 
 .header__nav-button {
-  margin-left: 24px;
+  width: 110px;
+  height: 43px;
 }
 
 @media only screen and (max-width: 729px) {
@@ -725,11 +726,23 @@ a {
   }
 }
 
+@media only screen and (max-width: 378px) {
+  .header__burger {
+    left: 320px;
+    top: 30px;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.intro {
+  margin-top: 80px;
+}
+
 .intro__content {
   max-width: 518px;
   position: relative;
-  margin-bottom: 233px;
-  margin-top: 100px;
+  padding: 120px 0 233px;
 }
 
 .intro__content::after {
@@ -738,7 +751,7 @@ a {
   content: '';
   width: 600px;
   height: 555px;
-  top: -60px;
+  top: 60px;
   left: calc(100% + 33px);
 }
 
@@ -1489,6 +1502,10 @@ a {
   padding-bottom: 150px;
 }
 
+.tables__about {
+  padding-top: 80px;
+}
+
 .tables__container {
   text-align: center;
 }
@@ -1509,6 +1526,16 @@ a {
   color: #22343D;
 }
 
+.tables__title-about {
+  margin-top: 50px;
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+
 .tables__paragraph {
   margin: 0;
   padding: 0;
@@ -1518,6 +1545,27 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #22343D;
+}
+
+.tables__paragraph-about {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.tables__about-desc {
+  margin: 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 49px;
 }
 
 .tables__list {
