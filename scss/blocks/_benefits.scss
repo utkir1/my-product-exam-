@@ -1,0 +1,198 @@
+
+.benefits__list {
+    @include reset-list;
+    // display: flex;
+    // flex-direction: row-reverse;
+}
+.benefits__item {
+    position: relative;
+    margin-bottom: 224px;
+    max-width: 486px;
+    width: 100%;
+    &:nth-child(even){
+        margin-left: 575px;
+    }
+    &-management{
+        &::after{
+            position: absolute;
+            background: url('../../img/management.png') no-repeat center center;
+            content: '';
+            width: 540px;
+            height: 474px;
+            top: -4px;
+            left: 570px;
+        }
+    }
+    &-collaborative{
+        &::after{
+            position: absolute;
+        background: url("../../img/pic.png") no-repeat center center;
+        content: '';
+        width: 543px;
+        height: 500px; 
+        top: -4px;
+        left: 570px;
+        }
+    }
+    &-customer{
+        &::after{
+            position: absolute;
+            background: url("../../img/lap-top.png") no-repeat center center;
+            content: '';
+            width: 543px;
+            height: 500px; 
+            top: -60px;
+            right: 570px;
+        }
+    }
+}
+.benefits__title {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #22343D;
+}
+.benefits__paragraph-heading{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 131px;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #22343D;
+    &--coolaborartive{
+        margin-bottom: 23px;
+    }
+    &--customer{
+        margin-bottom: 23px;
+    }
+}
+.benefits__caption {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+}
+.benefits__desc{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+    &-content{
+        margin-left: 65px;
+    }
+    &-orange::before{
+        position: absolute;
+        background:  #FF9900 url('../../img/Path.png') no-repeat center center;
+        width: 35px;
+        height: 35px;
+        content: '';
+        border-radius: 14px;
+        left: -1px ;
+    }
+    &-red::before{
+        position: absolute;
+        background:  #F03E3D url('../../img/Path.png') no-repeat center center;
+        width: 35px;
+        height: 35px;
+        content: '';
+        border-radius: 14px;
+        top: 66%;
+        left: -1px ;
+    }
+    &-blue::before{
+        position: absolute;
+        background:  #4D8DFF url('../../img/Path.png') no-repeat center center;
+        width: 35px;
+        height: 35px;
+        content: '';
+        border-radius: 14px;
+        left: -1px ;
+    }
+}
+
+@media only screen and (max-width:$tablet){
+    .benefits__item{
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 530px;
+        &:nth-child(2n){
+            margin-left: 0;
+            margin: 0 auto;
+        }
+        &-management::after{
+            top: -1px;
+            left: -10px;
+        }
+        &-customer::after{
+            top: -1px;
+            left: -10px;
+        }
+        &-collaborative::after{
+            top: -1px;
+            left: -10px;
+        }
+     
+    .benefits__paragraph-heading{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:$mobile){
+    .benefits__item{
+        padding-top: 360px;
+        max-width: 334px;
+        &:nth-child(even){
+            margin-left: 0;
+        }
+    }
+    .benefits__paragraph-heading{
+        margin-bottom: 16px;
+    }
+    .benefits__item{
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .benefits__item-management::after{
+        background: url("../../img/management-mobile.png") no-repeat left center;
+        width: 349px;
+        height: 306px;
+        bottom: 100%;
+    }
+    .benefits__item-customer::after{
+        background: url("../../img/lap-top-mobile.png") no-repeat left center;
+        width: 350px;
+        height: 320px;
+        bottom: 100%;
+    }
+    .benefits__item-collaborative::after{
+        background: url("../../img/pic-mobile.png") no-repeat left center;
+        width: 350px;
+        height: 291px;
+        bottom: 100%;
+    }
+}
+
+    .benefits__desc{
+    &-orange::before{
+        top: 82%;
+    }
+    &-red::before{
+        top:72%
+    }
+}
+}
